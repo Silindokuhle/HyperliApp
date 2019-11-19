@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HyperliApp.MainPage">
+    <StackLayout>
+        <!-- Place new controls here -->
+    <Image Source="bakground.jpg"/>
+    <Label Text="HYPERLI"
+               Margin="0,-140,0,0"
+               FontSize="70"
+               TextColor="White"
+               HorizontalOptions="Center"/>
+    <SearchBar HorizontalOptions="Center"
+                   Placeholder="What are you searching for"
+                   BackgroundColor="White"/>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Frame Grid.Row="0" Grid.Column="0" BackgroundColor="Transparent" BorderColor="LightGray">
+            <StackLayout>
+                <Image Source="burger.png"/>
+                    <Label Text="Food and Drinks"/>
+
+
+            </StackLayout>
+        </Frame>
+        <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="Transparent" BorderColor="LightGray">
+            <StackLayout>
+                <Image Source="ballon.png"
+                       button/>
+                <Label Text="Activities"/>
+            </StackLayout>
+        </Frame>
+        
+        <Frame Grid.Row="0" Grid.Column="2" BackgroundColor="Transparent" BorderColor="LightGray">
+            <StackLayout>
+                <Image Source="spar.png"/>
+                <Label Text="Beauty and Spar"/>
+            </StackLayout>
+        </Frame>
+        <Frame Grid.Row="1" Grid.Column="0" BackgroundColor="Transparent" BorderColor="LightGray">
+            <StackLayout>
+                <Image Source="shoe.png"/>
+                <Label Text="Health and Fitness"/>
+            </StackLayout>
+        </Frame>
+        <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="Transparent" BorderColor="LightGray">
+            <StackLayout>
+                <Image Source="tree.png"/>
+                <Label Text="Getaways"/>
+            </StackLayout>
+        </Frame>
+        <Frame Grid.Row="1" Grid.Column="2" BackgroundColor="Transparent" BorderColor="LightGray">
+            <StackLayout>
+                <Image Source="tools.png"/>
+                <Label Text="Local Services"/>
+            </StackLayout>
+        </Frame>
+    </Grid>
+
+    </StackLayout>
+</ContentPage>
