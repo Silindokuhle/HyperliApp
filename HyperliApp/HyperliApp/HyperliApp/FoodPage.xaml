@@ -5,10 +5,37 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="HyperliApp.FoodPage">
+    
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                <Image="food"/>
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=""/>
+                    <ColumnDefinition Width=""/>
+                </Grid.ColumnDefinitions>
+
+                <Image Source="food"
+                       Grid.ColumnSpan="2"
+                       Grid.Row="1" />
+                
+                <Label Text="Share a beef burger with a side"
+                   TextColor="black"
+                       Grid.Row="2"
+                   FontSize="10"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   Margin="50"/>
+
+            </Grid>
+                   
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
